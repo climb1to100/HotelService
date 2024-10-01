@@ -8,4 +8,11 @@ spring:
   datasource:
    url: jdbc:postgresql://localhost:5432/postgres
    username : postgres
-   password : dbroot
+   password : dbroot 
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry:   true
+    register-with-eureka: true
+    service-url: {"defaultZone" : http://localhost:7652/eureka/}
